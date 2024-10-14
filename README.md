@@ -1,46 +1,45 @@
-# Face Recognition Attendance System
+# SuperShop Management System
 
-This project is a **Facial Recognition Attendance System** built using Python. It uses real-time facial recognition to automate the process of marking attendance. The system features several user-friendly interfaces to manage data, train the system, and record attendance.
+This project is a **Java-based SuperShop Management System** designed to streamline the management of products, clients, sales, and wastage for a retail environment. It features a secure login system, mail-sending functionality, and a user-friendly interface to access various management modules.
 
 ## Features
 
-- **Real-time Face Detection and Recognition**
-- **Automated Attendance Marking**
-- **Multiple Interfaces for Ease of Use**
-- **Attendance Reports and Data Management**
+- **Login System**: Secure authentication to access the system's features.
+- **Category Management**: Add, edit, and manage product categories.
+- **Client Information**: Store and retrieve client information.
+- **Sales Reporting**: View and generate sales reports to track business performance.
+- **Product Information**: Manage inventory, including adding, updating, and deleting products.
+- **Wastage Management**: Track product wastage and generate reports.
+- **Mail Sending**: Send emails directly from the system, such as reports or notifications.
+- **Exit**: Safely close the application.
 
-## Interfaces
+## Modules Available After Logging In
 
-1. **Details**: Displays information about registered users (e.g., Name, ID, Registration Date).
-2. **Train Data**: Facilitates the registration of new users and trains the system for recognition.
-3. **Attendance**: Allows the viewing and export of attendance records with timestamps.
-4. **Face Recognition**: Uses the camera to detect and recognize faces in real-time.
-5. **Photos**: View and manage stored face images in the system.
-6. **Exit**: Safely terminates the application.
+1. **Category**: Manage product categories, such as adding new categories or editing existing ones.
+2. **ClientInfo**: Store and manage client details, including contact information and purchase history.
+3. **SalesReport**: View detailed sales reports, filter by date range, and export reports.
+4. **ProductInfo**: Manage product details, including inventory levels, prices, and descriptions.
+5. **Wastage**: Record product wastage and generate wastage reports.
+6. **Mail**: Send emails, such as sales reports or updates, directly to clients or administrators.
+7. **Exit**: Exit the application.
 
 ## Technologies Used
 
-- **Python**: Core language for developing the system.
-- **OpenCV**: For camera integration and face detection using Haar Cascade Classifier.
-- **Haar Cascade**: (`haarcascade_frontalface_default.xml`) used for face detection.
-- **FaceNet (Keras)**: Deep learning model used for facial recognition.
-- **Keras and TensorFlow**: Libraries to support FaceNet for facial embeddings and matching.
-- **SQLite/MySQL**: Database system for storing attendance records.
-- **Tkinter**: Graphical user interface to interact with the system.
+- **Java**: Core programming language used for the system.
+- **Swing**: For the graphical user interface (GUI).
+- **MySQL**: Database for storing product, client, and sales data.
+- **JDBC**: Java API for connecting to the MySQL database.
+- **JavaMail API**: For sending emails from within the application.
 
 ## Project Structure
-  /project_root │ ├── /dataset # Registered face images ├── /src # Source code │ ├── attendance.py # Main attendance system logic │ ├── train_data.py # Handles training of new faces │ ├── face_recognition.py # Facial recognition logic │ ├── database.py # Database operations │ └── gui.py # Tkinter-based interface ├── /img # System images and icons └── README.md # Project documentation
 
+  /project_root │ ├── /src # Java source code │ ├── login.java # Handles user login functionality │ ├── Category.java # Manages product categories │ ├── ClientInfo.java # Manages client information │ ├── SalesReport.java # Handles sales report generation │ ├── ProductInfo.java # Manages product details │ ├── Wastage.java # Handles wastage records │ ├── Mail.java # Sends emails using JavaMail API ├── /lib # External libraries ├── /db # Database scripts and configuration ├── README.md/ Project documentation
 
 ## Installation
 
 ### Prerequisites
 
-- **Python 3.x** installed on your system.
-- Install required libraries:
-  ```bash
-  pip install opencv-python
-  pip install dlib
-  pip install keras
-  pip install tensorflow
-  pip install numpy
+- **Java Development Kit (JDK)** 8 or higher
+- **MySQL** database
+- **JDBC** connector for MySQL
+- **JavaMail API** library
