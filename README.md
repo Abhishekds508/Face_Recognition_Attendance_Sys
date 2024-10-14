@@ -41,8 +41,4 @@ Copy code
 
 - **Python 3.x** 
 - Install required libraries:
-    pip install opencv-python
-    pip install dlib
-    pip install keras
-    pip install tensorflow
-    pip install numpy
+    opencv-python,facenet,keras,tensorflow,numpy
