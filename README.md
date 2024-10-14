@@ -28,17 +28,8 @@ This project is a **Facial Recognition Attendance System** built using Python. I
 - **SQLite/MySQL**: Database system for storing attendance records.
 - **Tkinter**: Graphical user interface to interact with the system.
 
-## Project Structure
-
-  /project_root │ ├── /dataset # Registered face images ├── /src # Source code │ ├── attendance.py # Main attendance system logic │ ├── train_data.py # Handles training of new faces │ ├── face_recognition.py # Facial recognition logic │ ├── database.py # Database operations │ └── gui.py # Tkinter-based interface ├── /img # System images and icons └── README.md # Project documentation
-
-markdown
-Copy code
-
-## Installation
-
 ### Prerequisites
 
 - **Python 3.x** 
 - Install required libraries:
-    opencv-python,facenet,keras,tensorflow,numpy
+   numpy,opencv,facenet,keras,tensorflow
